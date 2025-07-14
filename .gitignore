@@ -1,0 +1,45 @@
+# Dependencies
+**/node_modules/
+
+# Build outputs
+**/out/
+**/.next/
+**/build/
+**/dist/
+
+# Environment files - SENSITIVE DATA
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
+**/.env.test
+
+# Logs
+*.log
+logs/
+
+# Cache directories
+**/.swc/
+**/tsconfig.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# Package managers
+.npm/
+.yarn/
+
+# Vercel
+.vercel/
