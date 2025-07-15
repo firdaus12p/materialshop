@@ -2,7 +2,7 @@ import CategoryPage from "../../../components/CategoryPage";
 
 const atapProducts = [
   {
-    id: 1,
+    id: 101,
     name: "Genteng Metal Berpasir",
     description:
       "Genteng metal berkualitas premium dengan lapisan pasir untuk ketahanan dan estetika yang superior. Tahan karat dan cuaca ekstrem.",
@@ -19,7 +19,7 @@ const atapProducts = [
       "Halo, saya tertarik dengan Genteng Metal Berpasir. Mohon info harga dan spesifikasi lengkap produk. Terima kasih.",
   },
   {
-    id: 2,
+    id: 102,
     name: "Genteng Keramik Premium",
     description:
       "Genteng keramik berkualitas tinggi dengan berbagai pilihan warna dan model. Tahan lama dan memberikan kesan elegan pada bangunan.",
@@ -36,7 +36,7 @@ const atapProducts = [
       "Selamat siang, saya ingin menanyakan tentang Genteng Keramik Premium. Bisa tolong kirim katalog warna dan harga?",
   },
   {
-    id: 3,
+    id: 103,
     name: "Genteng Beton",
     description:
       "Genteng beton dengan kekuatan struktural tinggi dan daya tahan luar biasa. Cocok untuk bangunan dengan beban atap yang berat.",
@@ -53,7 +53,7 @@ const atapProducts = [
       "Halo, saya membutuhkan Genteng Beton untuk proyek rumah. Mohon informasi harga per meter persegi dan cara pemesanan.",
   },
   {
-    id: 4,
+    id: 104,
     name: "Seng Gelombang",
     description:
       "Seng gelombang berkualitas dengan profil yang kuat dan tahan lama. Solusi ekonomis untuk atap gudang, workshop, dan bangunan komersial.",
