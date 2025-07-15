@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ArticleImage } from "../../components/ArticleImage";
@@ -81,6 +84,72 @@ const articles: Article[] = [
     image: "/images/article-waterproofing.jpg",
     slug: "waterproofing-solusi-kebocoran",
   },
+  {
+    id: 7,
+    title: "Tutorial Memasang Keramik Lantai dengan Benar",
+    excerpt:
+      "Langkah-langkah detail cara memasang keramik lantai agar rapi dan tahan lama. Cocok untuk pemula.",
+    date: "1 Juli 2025",
+    category: "Tutorial",
+    readTime: "10 menit",
+    image: "/images/placeholder.jpg",
+    slug: "tutorial-pasang-keramik",
+  },
+  {
+    id: 8,
+    title: "Semen vs Mortar: Apa Bedanya?",
+    excerpt:
+      "Perbedaan mendasar antara semen dan mortar dalam konstruksi. Kapan menggunakan yang mana?",
+    date: "28 Juni 2025",
+    category: "Edukasi",
+    readTime: "4 menit",
+    image: "/images/placeholder.jpg",
+    slug: "semen-vs-mortar",
+  },
+  {
+    id: 9,
+    title: "Tips Hemat Biaya Renovasi Rumah",
+    excerpt:
+      "Strategi cerdas untuk menghemat biaya renovasi tanpa mengorbankan kualitas hasil akhir.",
+    date: "25 Juni 2025",
+    category: "Tips",
+    readTime: "6 menit",
+    image: "/images/placeholder.jpg",
+    slug: "tips-hemat-renovasi",
+  },
+  {
+    id: 10,
+    title: "Atap Bocor? Ini Solusi Cepat dan Efektif",
+    excerpt:
+      "Cara mengatasi atap bocor dengan cepat dan tepat. Dari identifikasi masalah hingga perbaikan permanen.",
+    date: "22 Juni 2025",
+    category: "Solusi",
+    readTime: "8 menit",
+    image: "/images/placeholder.jpg",
+    slug: "solusi-atap-bocor",
+  },
+  {
+    id: 11,
+    title: "Beton vs Bata Merah: Perbandingan Material Dinding",
+    excerpt:
+      "Analisis mendalam perbandingan beton dan bata merah untuk konstruksi dinding rumah.",
+    date: "20 Juni 2025",
+    category: "Perbandingan",
+    readTime: "9 menit",
+    image: "/images/placeholder.jpg",
+    slug: "beton-vs-bata-merah",
+  },
+  {
+    id: 12,
+    title: "Tutorial Membuat Cor Beton yang Kuat",
+    excerpt:
+      "Panduan step-by-step membuat campuran cor beton yang kuat dan berkualitas untuk fondasi rumah.",
+    date: "18 Juni 2025",
+    category: "Tutorial",
+    readTime: "12 menit",
+    image: "/images/placeholder.jpg",
+    slug: "tutorial-cor-beton",
+  },
 ];
 
 const categories = [
@@ -93,6 +162,18 @@ const categories = [
 ];
 
 export default function ArtikelPage() {
+  const [selectedCategory, setSelectedCategory] = useState<string>("Semua");
+
+  // Filter articles based on selected category
+  const filteredArticles =
+    selectedCategory === "Semua"
+      ? articles
+      : articles.filter((article) => article.category === selectedCategory);
+
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <>
       <Header />
@@ -120,62 +201,91 @@ export default function ArtikelPage() {
                 {categories.map((category) => (
                   <button
                     key={category}
+                    onClick={() => handleCategoryChange(category)}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                      category === "Semua"
-                        ? "bg-blue-600 text-white"
-                        : "bg-white text-gray-600 hover:bg-blue-50"
+                      category === selectedCategory
+                        ? "bg-blue-600 text-white shadow-lg"
+                        : "bg-white text-gray-600 hover:bg-blue-50 border border-gray-200"
                     }`}
                   >
                     {category}
                   </button>
                 ))}
               </div>
-            </div>
 
+              {/* Active filter indicator */}
+              <div className="text-center mt-4">
+                <p className="text-gray-600 text-sm">
+                  {selectedCategory === "Semua"
+                    ? `Menampilkan ${filteredArticles.length} artikel`
+                    : `Menampilkan ${filteredArticles.length} artikel kategori "${selectedCategory}"`}
+                </p>
+              </div>
+            </div>{" "}
             {/* Articles Grid */}
             <div className="max-w-6xl mx-auto">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {articles.map((article) => (
-                  <Link key={article.id} href={`/artikel/${article.slug}`}>
-                    <article className="card hover:shadow-lg transition-shadow cursor-pointer">
-                      <div className="relative h-48 bg-gray-200 rounded-t-lg overflow-hidden">
-                        <ArticleImage
-                          src={article.image}
-                          alt={article.title}
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute top-4 left-4">
-                          <span className="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                            {article.category}
+              {filteredArticles.length > 0 ? (
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
+                  {filteredArticles.map((article, index) => (
+                    <Link key={article.id} href={`/artikel/${article.slug}`}>
+                      <article
+                        className="card hover:shadow-lg transition-all duration-300 cursor-pointer transform hover:-translate-y-1"
+                        style={{
+                          animationDelay: `${index * 100}ms`,
+                          animation: "slideInUp 0.6s ease-out forwards",
+                        }}
+                      >
+                        <div className="relative h-48 bg-gray-200 rounded-t-lg overflow-hidden">
+                          <ArticleImage
+                            src={article.image}
+                            alt={article.title}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute top-4 left-4">
+                            <span className="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                              {article.category}
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="p-6">
+                          <div className="flex items-center text-xs text-gray-500 mb-3">
+                            <span>📅 {article.date}</span>
+                            <span className="mx-2">•</span>
+                            <span>⏱️ {article.readTime}</span>
+                          </div>
+
+                          <h2 className="font-bold text-lg text-gray-800 mb-3 line-clamp-2">
+                            {article.title}
+                          </h2>
+
+                          <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                            {article.excerpt}
+                          </p>
+
+                          <span className="text-blue-600 font-medium text-sm hover:text-blue-800 transition-colors">
+                            Baca Selengkapnya →
                           </span>
                         </div>
-                      </div>
-
-                      <div className="p-6">
-                        <div className="flex items-center text-xs text-gray-500 mb-3">
-                          <span>📅 {article.date}</span>
-                          <span className="mx-2">•</span>
-                          <span>⏱️ {article.readTime}</span>
-                        </div>
-
-                        <h2 className="font-bold text-lg text-gray-800 mb-3 line-clamp-2">
-                          {article.title}
-                        </h2>
-
-                        <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                          {article.excerpt}
-                        </p>
-
-                        <span className="text-blue-600 font-medium text-sm hover:text-blue-800 transition-colors">
-                          Baca Selengkapnya →
-                        </span>
-                      </div>
-                    </article>
-                  </Link>
-                ))}
-              </div>
+                      </article>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12">
+                  <div className="max-w-md mx-auto">
+                    <div className="text-6xl mb-4">📝</div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      Tidak ada artikel ditemukan
+                    </h3>
+                    <p className="text-gray-600">
+                      Belum ada artikel untuk kategori "{selectedCategory}".
+                      Coba pilih kategori lain atau kembali ke "Semua".
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
-
             {/* Newsletter Subscription */}
             <div className="max-w-2xl mx-auto mt-16">
               <div className="card p-8 text-center">
@@ -203,9 +313,3 @@ export default function ArtikelPage() {
     </>
   );
 }
-
-export const metadata = {
-  title: "Artikel & Tips Konstruksi - Bahan Bangunan Store",
-  description:
-    "Kumpulan artikel, tips, dan panduan lengkap seputar material bangunan, konstruksi, dan renovasi rumah dari para ahli.",
-};
