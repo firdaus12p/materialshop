@@ -17,11 +17,10 @@ export default function SitemapPage() {
     {
       title: "Kategori Produk",
       links: [
-        { name: "Papan", url: "/kategori/papan" },
+        { name: "Atap", url: "/kategori/atap" },
         { name: "Plafon", url: "/kategori/plafon" },
         { name: "Paku dan Baut", url: "/kategori/paku-dan-baut" },
         { name: "Baja Ringan", url: "/kategori/baja-ringan" },
-        { name: "Atap", url: "/kategori/atap" },
         { name: "Pipa", url: "/kategori/pipa" },
         { name: "Sanitary", url: "/kategori/sanitary" },
         { name: "Lainnya", url: "/kategori/lainnya" },

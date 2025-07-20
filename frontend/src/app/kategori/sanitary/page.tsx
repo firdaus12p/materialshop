@@ -1,73 +1,150 @@
+import { Metadata } from "next";
 import CategoryPage from "../../../components/CategoryPage";
+
+export const metadata: Metadata = {
+  title: "Toilet Portable & Bak Mandi Berkualitas - Bahan Bangunan Store",
+  description:
+    "Jual toilet portable FRP, bak mandi celup, bak mandi oval berbagai warna: biru, pink, putih. Perlengkapan sanitasi berkualitas tinggi dengan harga terbaik.",
+  keywords: [
+    "toilet portable frp",
+    "bak mandi celup",
+    "bak mandi oval",
+    "bak mandi biru",
+    "bak mandi pink",
+    "bak mandi putih",
+    "sanitasi portable",
+    "perlengkapan kamar mandi",
+    "toilet sementara",
+    "bak mandi plastik",
+    "sanitary ware",
+  ],
+  openGraph: {
+    title: "Toilet Portable & Bak Mandi Terlengkap - Bahan Bangunan Store",
+    description:
+      "Jual toilet portable FRP dan bak mandi oval berbagai warna. Perlengkapan sanitasi berkualitas tinggi untuk semua kebutuhan.",
+  },
+};
 
 const sanitaryProducts = [
   {
     id: 1,
-    name: "Closet Duduk TOTO",
+    name: "Toilet Portable FRP Model Standar",
     description:
-      "Closet duduk TOTO dengan teknologi modern dan desain elegan. Dilengkapi dual flush untuk efisiensi air dan kemudahan perawatan.",
+      "Toilet portable dari bahan FRP (Fiber Reinforced Plastic) model standar untuk kebutuhan sanitasi sementara. Cocok untuk proyek, event, atau area konstruksi.",
     features: [
-      "Brand TOTO terpercaya",
-      "Teknologi dual flush",
-      "Desain modern dan elegan",
-      "Mudah dibersihkan",
-      "Hemat air dan ramah lingkungan",
-      "Garansi resmi",
+      "Material FRP berkualitas tinggi",
+      "Model standar praktis",
+      "Tahan cuaca dan korosi",
+      "Mudah dipindahkan",
+      "Sistem ventilasi baik",
+      "Pintu kunci keamanan",
+      "Lantai anti slip",
+      "Maintenance mudah",
     ],
-    image: "/images/closet-toto.jpg",
+    image: "/images/Detail/Sanitary/Toilet Portable FRP Model Standar.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Sanitary.webp",
     whatsapp_text:
-      "Halo, saya tertarik dengan Closet Duduk TOTO. Mohon info harga dan tipe yang tersedia. Terima kasih.",
+      "Halo, saya tertarik dengan Toilet Portable FRP Model Standar. Mohon info harga sewa dan beli.",
   },
   {
     id: 2,
-    name: "Wastafel Standing",
+    name: "Bak Mandi Celup 45 x 45 x 60 Biru",
     description:
-      "Wastafel standing dengan pedestal kokoh dan design minimalis. Material keramik berkualitas tinggi dengan finishing yang sempurna.",
+      "Bak mandi celup ukuran 45x45x60 cm warna biru untuk kebutuhan mandi tradisional. Material plastik berkualitas tinggi yang tahan lama dan mudah dibersihkan.",
     features: [
-      "Material keramik premium",
-      "Design minimalis modern",
-      "Pedestal kokoh dan stabil",
-      "Finishing glossy tahan noda",
-      "Mudah dalam pemasangan",
-      "Berbagai ukuran tersedia",
+      "Dimensi 45x45x60 cm",
+      "Warna biru menarik",
+      "Material plastik premium",
+      "Tahan lama dan kuat",
+      "Mudah dibersihkan",
+      "Anti slip di bagian bawah",
+      "Cocok untuk segala usia",
+      "Harga terjangkau",
     ],
-    image: "/images/wastafel-standing.jpg",
+    image: "/images/Detail/Sanitary/Bak Mandi Celup 45 x 45 x 60 Biru.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Sanitary.webp",
     whatsapp_text:
-      "Selamat siang, saya membutuhkan Wastafel Standing untuk kamar mandi. Bisa tolong kirim pilihan model dan harga?",
+      "Selamat pagi, saya membutuhkan Bak Mandi Celup 45 x 45 x 60 Biru. Bisa minta info harga?",
   },
   {
     id: 3,
-    name: "Shower Set Minimalis",
+    name: "Bak Mandi Oval Biru",
     description:
-      "Set shower minimalis lengkap dengan hand shower, shower head, dan mixer. Material stainless steel berkualitas tinggi.",
+      "Bak mandi oval warna biru dengan desain ergonomis yang nyaman digunakan. Material berkualitas tinggi dengan finishing yang halus dan tahan lama.",
     features: [
-      "Set shower lengkap",
-      "Material stainless steel",
-      "Design minimalis modern",
-      "Tekanan air optimal",
-      "Mudah dalam perawatan",
-      "Tahan karat dan korosi",
+      "Desain oval ergonomis",
+      "Warna biru yang menarik",
+      "Material berkualitas tinggi",
+      "Finishing halus",
+      "Nyaman digunakan",
+      "Kapasitas optimal",
+      "Mudah perawatan",
+      "Design modern",
     ],
-    image: "/images/shower-set.jpg",
+    image: "/images/Detail/Sanitary/Bak Mandi Oval Biru.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Sanitary.webp",
     whatsapp_text:
-      "Halo, saya mencari Shower Set Minimalis. Mohon informasi paket lengkap dan harga yang tersedia.",
+      "Halo, saya tertarik dengan Bak Mandi Oval Biru. Mohon info harga dan ukuran yang tersedia.",
   },
   {
     id: 4,
-    name: "Kran Air Mixer",
+    name: "Bak Mandi Oval Pink Tempat Sabun",
     description:
-      "Kran air mixer berkualitas tinggi untuk wastafel dan kitchen sink. Kontrol suhu yang presisi dengan desain yang ergonomis.",
+      "Bak mandi oval warna pink dilengkapi dengan tempat sabun yang praktis. Desain feminim dengan fitur tambahan untuk kemudahan penggunaan sehari-hari.",
     features: [
-      "Mixer hot & cold water",
-      "Kontrol suhu presisi",
-      "Design ergonomis",
-      "Material brass berkualitas",
-      "Chrome finishing",
-      "Awet dan tahan lama",
+      "Desain oval modern",
+      "Warna pink feminim",
+      "Dilengkapi tempat sabun",
+      "Fitur praktis",
+      "Material tahan lama",
+      "Mudah dibersihkan",
+      "Cocok untuk anak",
+      "Value added features",
     ],
-    image: "/images/kran-mixer.jpg",
+    image: "/images/Detail/Sanitary/Bak Mandi Oval Pink Tempat Sabun.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Sanitary.webp",
     whatsapp_text:
-      "Selamat pagi, saya butuh Kran Air Mixer untuk wastafel. Bisa minta info model dan harga yang tersedia?",
+      "Selamat siang, saya tertarik dengan Bak Mandi Oval Pink Tempat Sabun. Bisa kirim detail produk?",
+  },
+  {
+    id: 5,
+    name: "Bak Mandi Oval Pink",
+    description:
+      "Bak mandi oval warna pink dengan desain yang menarik dan nyaman. Cocok untuk kamar mandi anak atau dewasa yang menyukai warna pink yang ceria.",
+    features: [
+      "Desain oval klasik",
+      "Warna pink ceria",
+      "Material berkualitas",
+      "Ukuran standar",
+      "Mudah digunakan",
+      "Tahan lama",
+      "Cocok segala usia",
+      "Harga kompetitif",
+    ],
+    image: "/images/Detail/Sanitary/Bak Mandi Oval Pink.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Sanitary.webp",
+    whatsapp_text:
+      "Halo, saya mencari Bak Mandi Oval Pink untuk kamar mandi. Mohon info harga dan cara pemesanan.",
+  },
+  {
+    id: 6,
+    name: "Bak Mandi Oval Putih",
+    description:
+      "Bak mandi oval warna putih dengan desain klasik yang timeless. Warna putih yang bersih dan elegan cocok untuk semua jenis dekorasi kamar mandi.",
+    features: [
+      "Desain oval timeless",
+      "Warna putih bersih",
+      "Klasik dan elegan",
+      "Cocok semua dekorasi",
+      "Material premium",
+      "Mudah maintenance",
+      "Tahan noda",
+      "Pilihan warna netral",
+    ],
+    image: "/images/Detail/Sanitary/Bak Mandi Oval Putih.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Sanitary.webp",
+    whatsapp_text:
+      "Selamat pagi, saya tertarik dengan Bak Mandi Oval Putih. Bisa minta info harga dan spesifikasi?",
   },
 ];
 
@@ -76,16 +153,8 @@ export default function SanitaryPage() {
     <CategoryPage
       categoryName="Sanitary"
       categoryIcon="🚿"
-      categoryDescription="Koleksi lengkap perlengkapan sanitari berkualitas untuk kamar mandi dan dapur. Dari closet, wastafel, hingga aksesoris dengan desain modern dan klasik."
+      categoryDescription="Koleksi lengkap toilet portable FRP dan bak mandi oval berkualitas tinggi. Tersedia berbagai pilihan warna: biru, pink, putih dengan desain modern dan fungsional untuk semua kebutuhan sanitasi."
       products={sanitaryProducts}
     />
   );
 }
-
-export const metadata = {
-  title: "Sanitary - Bahan Bangunan Store",
-  description:
-    "Jual berbagai produk sanitari berkualitas: closet duduk/jongkok, wastafel, shower, kran dengan harga terbaik. Untuk kamar mandi dan dapur modern.",
-  keywords:
-    "closet duduk, closet jongkok, wastafel, shower, kran, sanitary ware, kamar mandi, aksesoris sanitasi",
-};

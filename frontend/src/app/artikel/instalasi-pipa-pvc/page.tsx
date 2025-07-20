@@ -275,7 +275,7 @@ export default function PipaPVCArtikel() {
 
             <div className="bg-yellow-50 p-6 rounded-lg mt-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Do's (Yang Harus Dilakukan):
+                Do&apos;s (Yang Harus Dilakukan):
               </h3>
               <ul className="space-y-2 text-gray-700">
                 <li>
@@ -294,7 +294,7 @@ export default function PipaPVCArtikel() {
 
             <div className="bg-red-50 p-6 rounded-lg mt-4">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Don'ts (Yang Harus Dihindari):
+                Don&apos;ts (Yang Harus Dihindari):
               </h3>
               <ul className="space-y-2 text-gray-700">
                 <li>

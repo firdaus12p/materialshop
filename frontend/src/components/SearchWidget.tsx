@@ -13,54 +13,209 @@ interface Product {
 const searchableProducts: Product[] = [
   {
     id: 1,
-    name: "Papan Kayu Jati",
-    category: "Papan",
-    href: "/kategori/papan",
-  },
-  {
-    id: 2,
-    name: "Papan Kayu Meranti",
-    category: "Papan",
-    href: "/kategori/papan",
-  },
-  {
-    id: 3,
-    name: "Plafon Gypsum",
+    name: "Cornice Gipsum A Plus",
     category: "Plafon",
     href: "/kategori/plafon",
   },
-  { id: 4, name: "Plafon PVC", category: "Plafon", href: "/kategori/plafon" },
+  {
+    id: 2,
+    name: "Gypsum Jayaboard 1200 X 2400 X 9mm",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 3,
+    name: "Plafon GRC",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 4,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 3m",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
   {
     id: 5,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 4m",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 6,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 5m",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 7,
     name: "Paku Beton",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 6,
+    id: 8,
     name: "Baut Hexagonal",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 7,
+    id: 9,
+    name: "Dynabolt 10mm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 10,
+    name: "Paku Besi",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 11,
+    name: "Paku Beton",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 12,
+    name: "Ruping Atap Spandek",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 13,
+    name: "Screw Calciboard",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 14,
     name: "Baja Ringan C75",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
-  { id: 8, name: "Genteng Metal", category: "Atap", href: "/kategori/atap" },
-  { id: 9, name: "Genteng Keramik", category: "Atap", href: "/kategori/atap" },
-  { id: 10, name: "Pipa PVC", category: "Pipa", href: "/kategori/pipa" },
-  { id: 11, name: "Pipa Galvanis", category: "Pipa", href: "/kategori/pipa" },
+  { id: 15, name: "Genteng Metal", category: "Atap", href: "/kategori/atap" },
+  { id: 16, name: "Genteng Keramik", category: "Atap", href: "/kategori/atap" },
+  { id: 17, name: "Pipa PVC", category: "Pipa", href: "/kategori/pipa" },
+  { id: 18, name: "Pipa Galvanis", category: "Pipa", href: "/kategori/pipa" },
   {
-    id: 12,
+    id: 19,
     name: "Closet Duduk",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 13,
+    id: 20,
     name: "Wastafel",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 21,
+    name: "Tangki Air Fiberglass 250L",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 22,
+    name: "Tangki Air Fiberglass 500L",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 23,
+    name: "Tangki Air Fiberglass 1M3",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 24,
+    name: "Tangki Air Fiberglass 2M3",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 25,
+    name: "Tangki Air Fiberglass 3M3",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 26,
+    name: "Tangki Biofilter Anaerob Aerob FRP KAP 5 M3",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 27,
+    name: "Tangki Ipal 600 Liter",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 28,
+    name: "Tangki Ipal Komunal UK 3 M3",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 29,
+    name: "Baja Ringan Reng CBM (K-STEEL) 0.40mm Besar (Standar)",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 30,
+    name: "Canal C 75x 0.65X6 MTR Antik Truss (ECO)",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 31,
+    name: "CNP 100 Black Steel",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 32,
+    name: "Hollow",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 33,
+    name: "Pipa HDPE Rajalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 34,
+    name: "Pipa PVC Indalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 35,
+    name: "Pipa PVC Two Horse",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 36,
+    name: "Toilet Portable FRP Model Standar",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 37,
+    name: "Bak Mandi Oval Biru",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 38,
+    name: "Bak Mandi Oval Pink",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
@@ -142,7 +297,7 @@ export default function SearchWidget() {
               value={query}
               onChange={handleInputChange}
               onFocus={() => setShowResults(query.length > 0)}
-              placeholder="Cari produk... (misal: papan kayu, paku, baja ringan)"
+              placeholder="Cari produk... (misal: atap spandek, paku, baja ringan)"
               className="w-full px-4 py-4 pl-12 pr-24 border border-orange-300 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-lg"
             />
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -183,8 +338,8 @@ export default function SearchWidget() {
             <div className="absolute z-50 w-full mt-2 bg-white rounded-lg shadow-lg border border-gray-200 animate-fadeIn">
               <div className="p-2">
                 <div className="text-sm font-medium text-gray-500 px-3 py-2 border-b border-gray-100">
-                  🔍 Hasil Pencarian untuk "{query}" ({filteredProducts.length}{" "}
-                  produk)
+                  🔍 Hasil Pencarian untuk &quot;{query}&quot; (
+                  {filteredProducts.length} produk)
                 </div>
                 {filteredProducts.map((product) => (
                   <Link
@@ -234,7 +389,7 @@ export default function SearchWidget() {
                   >
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
                   </svg>
-                  💬 Tanya Admin untuk "{query}"
+                  💬 Tanya Admin untuk &quot;{query}&quot;
                 </button>
               </div>
             </div>
@@ -246,7 +401,7 @@ export default function SearchWidget() {
               <div className="text-center">
                 <div className="text-4xl mb-3">🔍</div>
                 <div className="text-gray-800 font-medium mb-2">
-                  Produk "{query}" tidak ditemukan
+                  Produk &quot;{query}&quot; tidak ditemukan
                 </div>
                 <div className="text-gray-600 text-sm mb-4">
                   Tapi jangan khawatir! Admin kami siap membantu Anda menemukan
@@ -277,7 +432,7 @@ export default function SearchWidget() {
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              "papan kayu",
+              "atap spandek",
               "baja ringan",
               "genteng metal",
               "pipa PVC",

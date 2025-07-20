@@ -10,7 +10,7 @@ export default function HeroSection() {
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
             Dapatkan berbagai material bangunan berkualitas dengan harga
-            terbaik. Papan, plafon, paku baut, baja ringan, atap, pipa, dan
+            terbaik. Atap spandek, plafon, paku baut, baja ringan, pipa, dan
             sanitary.
           </p>
 

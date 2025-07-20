@@ -3,12 +3,11 @@ import Link from "next/link";
 export default function CategoriesSection() {
   const categories = [
     {
-      name: "Papan",
-      slug: "papan",
-      description:
-        "Papan kayu, multiplek, MDF, dan berbagai jenis papan lainnya",
-      icon: "🪵",
-      color: "from-amber-500 to-orange-500",
+      name: "Atap",
+      slug: "atap",
+      description: "Atap spandek CBM, genteng, dan material atap berkualitas",
+      icon: "🏘️",
+      color: "from-red-500 to-pink-500",
     },
     {
       name: "Plafon",
@@ -32,13 +31,6 @@ export default function CategoriesSection() {
       color: "from-indigo-500 to-purple-500",
     },
     {
-      name: "Atap",
-      slug: "atap",
-      description: "Genteng, seng, dan material atap tahan lama",
-      icon: "🏘️",
-      color: "from-red-500 to-pink-500",
-    },
-    {
       name: "Pipa",
       slug: "pipa",
       description: "Pipa PVC, PPR, dan sistem perpipaan lengkap",
@@ -51,6 +43,20 @@ export default function CategoriesSection() {
       description: "Toilet, wastafel, shower, dan perlengkapan kamar mandi",
       icon: "🚿",
       color: "from-cyan-500 to-blue-500",
+    },
+    {
+      name: "Tangki Air",
+      slug: "tangki-air",
+      description: "Tangki air fiberglass berbagai ukuran untuk kebutuhan air",
+      icon: "🛠️",
+      color: "from-emerald-500 to-teal-500",
+    },
+    {
+      name: "Tangki IPAL",
+      slug: "tangki-ipal",
+      description: "Tangki IPAL biofilter dan komunal untuk pengolahan limbah",
+      icon: "🏭",
+      color: "from-orange-500 to-red-500",
     },
     {
       name: "Lainnya",

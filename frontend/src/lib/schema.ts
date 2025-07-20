@@ -5,7 +5,7 @@ export function generateOrganizationSchema() {
     name: "Bahan Bangunan Store",
     image: "https://bahanbangunanstore.com/logo.jpg",
     description:
-      "Toko bahan bangunan online terpercaya melayani seluruh Indonesia. Jual papan kayu, baja ringan, genteng, pipa PVC, plafon gypsum dengan harga terbaik.",
+      "Toko bahan bangunan online terpercaya melayani seluruh Indonesia. Jual atap spandek, baja ringan, genteng, pipa PVC, plafon gypsum dengan harga terbaik.",
     url: "https://bahanbangunanstore.com",
     telephone: "+62-882-4242-3267",
     address: {
@@ -30,9 +30,9 @@ export function generateOrganizationSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Product",
-            name: "Papan Kayu",
+            name: "Atap Spandek",
             description:
-              "Berbagai jenis papan kayu berkualitas untuk konstruksi dan furniture",
+              "Berbagai jenis atap spandek CBM berkualitas untuk konstruksi",
           },
         },
         {

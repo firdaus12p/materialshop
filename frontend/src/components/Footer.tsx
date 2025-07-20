@@ -44,10 +44,10 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/kategori/papan"
+                  href="/kategori/atap"
                   className="text-gray-300 hover:text-white"
                 >
-                  Papan
+                  Atap
                 </Link>
               </li>
               <li>
@@ -76,14 +76,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/kategori/atap"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Atap
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/kategori/pipa"
                   className="text-gray-300 hover:text-white"
                 >
@@ -96,6 +88,22 @@ export default function Footer() {
                   className="text-gray-300 hover:text-white"
                 >
                   Sanitary
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/kategori/tangki-air"
+                  className="text-gray-300 hover:text-white"
+                >
+                  Tangki Air
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/kategori/tangki-ipal"
+                  className="text-gray-300 hover:text-white"
+                >
+                  Tangki IPAL
                 </Link>
               </li>
             </ul>

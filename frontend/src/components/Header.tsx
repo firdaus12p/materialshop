@@ -12,30 +12,72 @@ interface Product {
 }
 
 const searchableProducts: Product[] = [
-  // Papan Kayu
+  // Atap Spandek
   {
     id: 1,
-    name: "Papan Kayu Jati",
-    category: "Papan",
-    href: "/kategori/papan",
+    name: "Atap Spandek CBM 0.30mm X 1m X 3m – AZ 70",
+    category: "Atap",
+    href: "/kategori/atap",
   },
   {
     id: 2,
-    name: "Papan Kayu Meranti",
-    category: "Papan",
-    href: "/kategori/papan",
+    name: "Atap Spandek CBM 0.30mm X 1m X 4m - AZ 70",
+    category: "Atap",
+    href: "/kategori/atap",
   },
   {
     id: 3,
-    name: "Papan Kayu Mahoni",
-    category: "Papan",
-    href: "/kategori/papan",
+    name: "Atap Spandek CBM 0.30mm X 1m X 5m - AZ 70",
+    category: "Atap",
+    href: "/kategori/atap",
   },
   {
     id: 4,
-    name: "Papan Kayu Kamper",
-    category: "Papan",
-    href: "/kategori/papan",
+    name: "Atap Spandek CBM 0.30mm X 1m X 6m - AZ 70",
+    category: "Atap",
+    href: "/kategori/atap",
+  },
+  {
+    id: 5,
+    name: "Atap Spandek CBM 0.35mm X 1m X Per Meter - AZ 100",
+    category: "Atap",
+    href: "/kategori/atap",
+  },
+  {
+    id: 6,
+    name: "Atap Spandek CBM 0.40mm X 1m X Per Meter - AZ 100",
+    category: "Atap",
+    href: "/kategori/atap",
+  },
+  {
+    id: 7,
+    name: "Atap Spandek CBM 0.45mm X 1m X Per Meter - AZ 100",
+    category: "Atap",
+    href: "/kategori/atap",
+  },
+  {
+    id: 8,
+    name: "Atap Spandek CBM Pesonadeck 0.30mm X 5.5m",
+    category: "Atap",
+    href: "/kategori/atap",
+  },
+  {
+    id: 9,
+    name: "Atap Spandek Pasir Blue Green",
+    category: "Atap",
+    href: "/kategori/atap",
+  },
+  {
+    id: 10,
+    name: "Atap Spandek Pasir Hitam",
+    category: "Atap",
+    href: "/kategori/atap",
+  },
+  {
+    id: 11,
+    name: "Atap Spandek Pasir Merah",
+    category: "Atap",
+    href: "/kategori/atap",
   },
 
   // Plafon
@@ -132,6 +174,364 @@ const searchableProducts: Product[] = [
     href: "/kategori/sanitary",
   },
   { id: 27, name: "Shower", category: "Sanitary", href: "/kategori/sanitary" },
+
+  // Plafon
+  {
+    id: 28,
+    name: "Cornice Gipsum A Plus",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 29,
+    name: "Gypsum Jayaboard 1200 X 2400 X 9mm",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 30,
+    name: "Plafon GRC",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 31,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 3m",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 32,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 4m",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+  {
+    id: 33,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 5m",
+    category: "Plafon",
+    href: "/kategori/plafon",
+  },
+
+  // Paku dan Baut
+  {
+    id: 34,
+    name: "Dynabolt 10mm X 4.8cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 35,
+    name: "Dynabolt 10mm X 6.0cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 36,
+    name: "Dynabolt 10mm X 8.0cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 37,
+    name: "Paku Besi 4cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 38,
+    name: "Paku Besi 5cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 39,
+    name: "Paku Besi 7cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 40,
+    name: "Paku Besi 10cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 41,
+    name: "Paku Besi 12cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 42,
+    name: "Paku Beton 4cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 43,
+    name: "Paku Beton 5cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 44,
+    name: "Paku Beton 7cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 45,
+    name: "Paku Beton 10cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 46,
+    name: "Ruping Atap Spandek 2cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 47,
+    name: "Ruping Atap Spandek 4.5cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 48,
+    name: "Ruping Atap Spandek 6cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 49,
+    name: "Ruping Atap Spandek 7cm",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 50,
+    name: "Screw Calciboard 6 X 1 14 (3cm)",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 51,
+    name: "Screw Calciboard 6 X 34 (2cm)",
+    category: "Paku dan Baut",
+    href: "/kategori/paku-dan-baut",
+  },
+  {
+    id: 52,
+    name: "Tangki Air Fiberglass 250L",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 53,
+    name: "Tangki Air Fiberglass 500L",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 54,
+    name: "Tangki Air Fiberglass 600L",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 55,
+    name: "Tangki Air Fiberglass 800L",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 56,
+    name: "Tangki Air Fiberglass 1M3 (1000L)",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 57,
+    name: "Tangki Air Fiberglass 1.2M3 (1200L)",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 58,
+    name: "Tangki Air Fiberglass 2M3 (2000L)",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 59,
+    name: "Tangki Air Fiberglass 3M3 (3000L)",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 60,
+    name: "Tangki Air Fiberglass 3M3 Kapsul",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 61,
+    name: "Tangki Air Fiberglass 4M3 (4000L)",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 62,
+    name: "Tangki Air Fiberglass 5M3 (5000L)",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 63,
+    name: "Tangki Biofilter Anaerob Aerob FRP KAP 5 M3",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 64,
+    name: "Tangki Ipal 600 Liter",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 65,
+    name: "Tangki Ipal 800 Liter",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 66,
+    name: "Tangki Ipal Komunal UK 3 M3",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 67,
+    name: "Tangki Ipal Komunal UK 5 M3",
+    category: "Tangki IPAL",
+    href: "/kategori/tangki-ipal",
+  },
+  {
+    id: 68,
+    name: "Baja Ringan Reng CBM (K-STEEL) 0.40mm Besar (Standar)",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 69,
+    name: "Canal C 75x 0.65X6 MTR Antik Truss (ECO)",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 70,
+    name: "Canal C Cnp 123 Black Steel Purlin",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 71,
+    name: "CNP 100 Black Steel",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 72,
+    name: "Hollow",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 73,
+    name: "Kanal C-Canal 75 X 0.65 X 6 MTR Antik Truss (Super)",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 74,
+    name: "Kanal C-Canal 75x0.75x6 MTR Antik Truss (ECO)",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 75,
+    name: "Wall Angle",
+    category: "Baja Ringan",
+    href: "/kategori/baja-ringan",
+  },
+  {
+    id: 76,
+    name: "Pipa HDPE Rajalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 77,
+    name: "Pipa PVC Indalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 78,
+    name: "Pipa PVC Rajalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 79,
+    name: "Pipa PVC Ratulon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 80,
+    name: "Pipa PVC Two Horse",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 81,
+    name: "Toilet Portable FRP Model Standar",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 82,
+    name: "Bak Mandi Celup 45 x 45 x 60 Biru",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 83,
+    name: "Bak Mandi Oval Biru",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 84,
+    name: "Bak Mandi Oval Pink Tempat Sabun",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 85,
+    name: "Bak Mandi Oval Pink",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
+  {
+    id: 86,
+    name: "Bak Mandi Oval Putih",
+    category: "Sanitary",
+    href: "/kategori/sanitary",
+  },
 ];
 
 export default function Header() {
@@ -142,13 +542,14 @@ export default function Header() {
   const router = useRouter();
 
   const categories = [
-    { name: "Papan", slug: "papan" },
+    { name: "Atap", slug: "atap" },
     { name: "Plafon", slug: "plafon" },
     { name: "Paku dan Baut", slug: "paku-dan-baut" },
     { name: "Baja Ringan", slug: "baja-ringan" },
-    { name: "Atap", slug: "atap" },
     { name: "Pipa", slug: "pipa" },
     { name: "Sanitary", slug: "sanitary" },
+    { name: "Tangki Air", slug: "tangki-air" },
+    { name: "Tangki IPAL", slug: "tangki-ipal" },
   ];
 
   const filteredProducts =
@@ -385,7 +786,7 @@ export default function Header() {
                         onClick={handleWhatsAppSearch}
                         className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
                       >
-                        Tanya "{searchQuery}" via WhatsApp
+                        Tanya &quot;{searchQuery}&quot; via WhatsApp
                       </button>
                     </div>
                   </>
@@ -525,7 +926,7 @@ export default function Header() {
                       onClick={handleWhatsAppSearch}
                       className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium"
                     >
-                      Tanya "{searchQuery}" via WhatsApp
+                      Tanya &quot;{searchQuery}&quot; via WhatsApp
                     </button>
                   </div>
                 </>

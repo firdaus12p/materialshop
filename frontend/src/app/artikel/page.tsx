@@ -19,17 +19,6 @@ interface Article {
 
 const articles: Article[] = [
   {
-    id: 1,
-    title: "Cara Memilih Papan Kayu Berkualitas untuk Furniture",
-    excerpt:
-      "Panduan lengkap memilih papan kayu yang tepat untuk proyek furniture Anda. Dari jenis kayu hingga tips perawatan.",
-    date: "15 Juli 2025",
-    category: "Tips",
-    readTime: "5 menit",
-    image: "/images/article-papan-kayu.jpg",
-    slug: "papan-kayu",
-  },
-  {
     id: 2,
     title: "Keunggulan Baja Ringan vs Kayu untuk Rangka Atap",
     excerpt:
@@ -279,8 +268,9 @@ export default function ArtikelPage() {
                       Tidak ada artikel ditemukan
                     </h3>
                     <p className="text-gray-600">
-                      Belum ada artikel untuk kategori "{selectedCategory}".
-                      Coba pilih kategori lain atau kembali ke "Semua".
+                      Belum ada artikel untuk kategori &quot;{selectedCategory}
+                      &quot;. Coba pilih kategori lain atau kembali ke
+                      &quot;Semua&quot;.
                     </p>
                   </div>
                 </div>

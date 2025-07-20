@@ -1,73 +1,130 @@
+import { Metadata } from "next";
 import CategoryPage from "../../../components/CategoryPage";
+
+export const metadata: Metadata = {
+  title: "Pipa PVC & HDPE Berkualitas Tinggi - Bahan Bangunan Store",
+  description:
+    "Jual pipa PVC dan HDPE berkualitas tinggi berbagai merek: Rajalon, Indalon, Ratulon, Two Horse. Sistem perpipaan terpercaya untuk instalasi air bersih dan drainase.",
+  keywords: [
+    "pipa pvc rajalon",
+    "pipa pvc indalon",
+    "pipa pvc ratulon",
+    "pipa pvc two horse",
+    "pipa hdpe rajalon",
+    "pipa pvc berkualitas",
+    "sistem perpipaan",
+    "instalasi air bersih",
+    "pipa drainase",
+    "pipa air bersih",
+    "supplier pipa pvc",
+  ],
+  openGraph: {
+    title: "Pipa PVC & HDPE Terlengkap - Bahan Bangunan Store",
+    description:
+      "Jual pipa PVC dan HDPE berkualitas tinggi merek Rajalon, Indalon, Ratulon, Two Horse. Sistem perpipaan terpercaya untuk semua kebutuhan instalasi.",
+  },
+};
 
 const pipaProducts = [
   {
     id: 1,
-    name: "Pipa PVC 4 inch",
+    name: "Pipa HDPE Rajalon",
     description:
-      "Pipa PVC berkualitas tinggi diameter 4 inch untuk instalasi air bersih dan drainase. Material virgin PVC dengan ketahanan maksimal.",
+      "Pipa HDPE (High Density Polyethylene) merek Rajalon berkualitas tinggi untuk instalasi air bertekanan tinggi. Material HDPE memberikan fleksibilitas dan ketahanan yang superior.",
     features: [
-      "Material virgin PVC berkualitas",
-      "Diameter 4 inch presisi",
+      "Material HDPE berkualitas tinggi",
+      "Merek Rajalon terpercaya",
       "Tahan tekanan tinggi",
-      "Tidak mudah pecah atau retak",
-      "Mudah dalam instalasi",
-      "Tersedia panjang 4 meter",
+      "Fleksibilitas tinggi",
+      "Tahan korosi dan kimia",
+      "Umur pakai panjang",
+      "Ramah lingkungan",
+      "Berbagai diameter tersedia",
     ],
-    image: "/images/pipa-pvc-4inch.jpg",
+    image: "/images/Detail/Pipa/Detail-Pipa-HDPE-Rajalon.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Pipa.webp",
     whatsapp_text:
-      "Halo, saya membutuhkan Pipa PVC 4 inch untuk instalasi drainase. Mohon info harga per batang dan ketersediaan stok.",
+      "Halo, saya tertarik dengan Pipa HDPE Rajalon. Mohon info harga per meter dan ukuran yang tersedia.",
   },
   {
     id: 2,
-    name: "Pipa PPR",
+    name: "Pipa PVC Indalon",
     description:
-      "Pipa PPR (Polypropylene Random) untuk instalasi air panas dan dingin. Teknologi modern dengan daya tahan jangka panjang.",
+      "Pipa PVC merek Indalon untuk instalasi air bersih dan drainase. Kualitas premium dengan standar SNI untuk keandalan sistem perpipaan jangka panjang.",
     features: [
-      "Material PPR berkualitas tinggi",
-      "Tahan air panas hingga 95°C",
-      "Tidak berkarat dan tidak beracun",
-      "Koneksi fusion welding",
-      "Garansi jangka panjang",
-      "Berbagai diameter tersedia",
+      "Material PVC virgin berkualitas",
+      "Merek Indalon terpercaya",
+      "Standar SNI bersertifikat",
+      "Tahan tekanan optimal",
+      "Mudah instalasi",
+      "Anti bocor",
+      "Harga kompetitif",
+      "Support teknis lengkap",
     ],
-    image: "/images/pipa-ppr.jpg",
+    image: "/images/Detail/Pipa/Detail-Pipa-PVC-Indalon.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Pipa.webp",
     whatsapp_text:
-      "Selamat siang, saya tertarik dengan Pipa PPR untuk instalasi air panas. Bisa tolong kirim katalog ukuran dan harga?",
+      "Selamat pagi, saya membutuhkan Pipa PVC Indalon untuk rumah. Bisa minta info harga dan cara pemasangan?",
   },
   {
     id: 3,
-    name: "Pipa Galvanis",
+    name: "Pipa PVC Rajalon",
     description:
-      "Pipa galvanis berkualitas tinggi untuk instalasi air dan gas. Coating galvanis memberikan perlindungan optimal terhadap korosi.",
+      "Pipa PVC merek Rajalon dengan kualitas premium untuk berbagai aplikasi perpipaan. Teknologi modern dengan daya tahan maksimal untuk instalasi air bersih dan limbah.",
     features: [
-      "Material galvanis premium",
-      "Tahan karat dan korosi",
-      "Kekuatan struktural tinggi",
-      "Cocok untuk air dan gas",
-      "Ulir presisi untuk sambungan",
-      "Standar SNI dan internasional",
+      "Material PVC premium",
+      "Merek Rajalon berkualitas",
+      "Teknologi modern",
+      "Multi aplikasi",
+      "Tahan UV dan cuaca",
+      "Koneksi yang kuat",
+      "Maintenance minimal",
+      "Garansi kualitas",
     ],
-    image: "/images/pipa-galvanis.jpg",
+    image: "/images/Detail/Pipa/Detail-Pipa-PVC-Rajalon.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Pipa.webp",
     whatsapp_text:
-      "Halo, saya mencari Pipa Galvanis untuk instalasi air. Mohon informasi ukuran dan harga yang tersedia.",
+      "Halo, saya tertarik dengan Pipa PVC Rajalon. Mohon info harga dan spesifikasi lengkap.",
   },
   {
     id: 4,
-    name: "Fitting PVC Lengkap",
+    name: "Pipa PVC Ratulon",
     description:
-      "Set fitting PVC lengkap untuk sambungan pipa. Termasuk elbow, tee, reducer, dan socket dengan kualitas presisi tinggi.",
+      "Pipa PVC merek Ratulon untuk sistem perpipaan yang handal dan efisien. Kualitas terjamin dengan harga terjangkau untuk semua kebutuhan instalasi rumah tangga dan komersial.",
     features: [
-      "Set fitting lengkap",
       "Material PVC berkualitas",
-      "Presisi tinggi untuk sambungan",
-      "Berbagai jenis dan ukuran",
-      "Mudah dalam pemasangan",
-      "Harga paket ekonomis",
+      "Merek Ratulon terpercaya",
+      "Harga terjangkau",
+      "Instalasi mudah",
+      "Daya tahan tinggi",
+      "Berbagai ukuran",
+      "Cocok rumah dan komersial",
+      "Service after sales",
     ],
-    image: "/images/fitting-pvc.jpg",
+    image: "/images/Detail/Pipa/Detail-Pipa-PVC-Ratulon.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Pipa.webp",
     whatsapp_text:
-      "Selamat pagi, saya butuh Fitting PVC Lengkap untuk proyek instalasi. Bisa minta info paket dan harga?",
+      "Selamat siang, saya membutuhkan Pipa PVC Ratulon untuk renovasi. Bisa kirim penawaran harga?",
+  },
+  {
+    id: 5,
+    name: "Pipa PVC Two Horse",
+    description:
+      "Pipa PVC merek Two Horse dengan standar kualitas internasional. Solusi perpipaan modern dengan teknologi terdepan untuk instalasi air bersih yang aman dan tahan lama.",
+    features: [
+      "Standar kualitas internasional",
+      "Merek Two Horse",
+      "Teknologi terdepan",
+      "Air bersih yang aman",
+      "Sertifikasi lengkap",
+      "Presisi tinggi",
+      "Instalasi profesional",
+      "Value for money",
+    ],
+    image: "/images/Detail/Pipa/Detail-Pipa-PVC-Two-Horse.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Pipa.webp",
+    whatsapp_text:
+      "Halo, saya tertarik dengan Pipa PVC Two Horse. Mohon info harga dan keunggulan produk.",
   },
 ];
 
@@ -76,16 +133,8 @@ export default function PipaPage() {
     <CategoryPage
       categoryName="Pipa"
       categoryIcon="🚰"
-      categoryDescription="Koleksi lengkap pipa dan fitting berkualitas untuk instalasi air, drainase, dan sanitasi. Tersedia berbagai jenis, ukuran, dan spesifikasi sesuai kebutuhan."
+      categoryDescription="Koleksi lengkap pipa PVC dan HDPE berkualitas tinggi dari merek terpercaya: Rajalon, Indalon, Ratulon, dan Two Horse. Sistem perpipaan modern untuk instalasi air bersih, drainase, dan berbagai kebutuhan konstruksi."
       products={pipaProducts}
     />
   );
 }
-
-export const metadata = {
-  title: "Pipa - Bahan Bangunan Store",
-  description:
-    "Jual berbagai jenis pipa berkualitas: PVC, galvanis, PPR, HDPE dengan fitting lengkap. Untuk instalasi air bersih, drainase, dan sanitasi.",
-  keywords:
-    "pipa PVC, pipa galvanis, pipa PPR, pipa HDPE, fitting pipa, instalasi air, drainase, sanitasi",
-};

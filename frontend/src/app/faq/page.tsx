@@ -16,7 +16,7 @@ const faqData = [
     id: 2,
     question: "Apakah ada minimum order?",
     answer:
-      "Minimum order tergantung jenis produk. Untuk produk satuan seperti paku/baut biasanya 1 box, sedangkan untuk material seperti papan/pipa minimal 10 batang. Silakan konsultasi via WhatsApp untuk info detail.",
+      "Minimum order tergantung jenis produk. Untuk produk satuan seperti paku/baut biasanya 1 box, sedangkan untuk material seperti atap spandek/pipa minimal 10 batang. Silakan konsultasi via WhatsApp untuk info detail.",
   },
   {
     id: 3,

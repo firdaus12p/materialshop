@@ -164,7 +164,7 @@ export function isSafeUrl(url: string): boolean {
   }
 }
 
-export default {
+const securityUtils = {
   sanitizeInput,
   validatePhoneNumber,
   validateWhatsAppUrl,
@@ -175,3 +175,5 @@ export default {
   isSafeUrl,
   searchRateLimiter,
 };
+
+export default securityUtils;

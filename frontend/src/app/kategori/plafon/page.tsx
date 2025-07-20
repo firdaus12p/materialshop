@@ -1,92 +1,150 @@
+import { Metadata } from "next";
 import CategoryPage from "../../../components/CategoryPage";
 
-const atapProducts = [
+export const metadata: Metadata = {
+  title: "Plafon Gypsum & PVC Berkualitas - Bahan Bangunan Store",
+  description:
+    "Jual plafon berkualitas tinggi: Cornice Gipsum A Plus, Gypsum Jayaboard, Plafon GRC, Shunda PVC Ceiling berbagai ukuran untuk interior modern.",
+  keywords: [
+    "plafon gypsum",
+    "plafon PVC",
+    "cornice gipsum",
+    "gypsum jayaboard",
+    "plafon GRC",
+    "shunda PVC ceiling",
+    "plafon 8mm",
+    "ceiling material",
+    "interior plafon",
+    "bahan plafon berkualitas",
+  ],
+  openGraph: {
+    title: "Plafon Gypsum & PVC Berkualitas Tinggi - Bahan Bangunan Store",
+    description:
+      "Jual plafon gypsum, PVC, dan GRC berkualitas tinggi. Shunda PVC Ceiling, Cornice Gipsum A Plus untuk interior modern.",
+  },
+};
+
+const plafonProducts = [
   {
     id: 1,
-    name: "Genteng Metal Berpasir",
+    name: "Cornice Gipsum A Plus",
     description:
-      "Genteng metal berkualitas premium dengan lapisan pasir untuk ketahanan dan estetika yang superior. Tahan karat dan cuaca ekstrem.",
+      "Cornice Gipsum A Plus berkualitas premium untuk dekorasi plafon dan dinding. Material gipsum halus dengan finishing yang elegant untuk memberikan sentuhan mewah pada interior.",
     features: [
-      "Material metal berkualitas tinggi",
-      "Lapisan pasir anti slip",
-      "Tahan karat dan korosi",
-      "Insulasi panas yang baik",
-      "Pemasangan mudah dan cepat",
-      "Garansi 10 tahun",
+      "Material gipsum premium",
+      "Design elegant dan mewah",
+      "Permukaan halus dan rata",
+      "Mudah dipasang dan dicat",
+      "Tahan lama dan awet",
+      "Cocok untuk berbagai gaya interior",
     ],
-    image: "/images/genteng-metal.jpg",
+    image: "/images/Detail/Plafon/Cornice Gipsum A Plus.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Plafon.webp",
     whatsapp_text:
-      "Halo, saya tertarik dengan Genteng Metal Berpasir. Mohon info harga dan spesifikasi lengkap produk. Terima kasih.",
+      "Halo, saya tertarik dengan Cornice Gipsum A Plus. Mohon info harga dan ketersediaan stok.",
   },
   {
     id: 2,
-    name: "Genteng Keramik Premium",
+    name: "Gypsum Jayaboard 1200 X 2400 X 9mm",
     description:
-      "Genteng keramik berkualitas tinggi dengan berbagai pilihan warna dan model. Tahan lama dan memberikan kesan elegan pada bangunan.",
+      "Gypsum Jayaboard ukuran 1200 X 2400 X 9mm untuk plafon dan partisi. Kualitas premium dengan permukaan halus dan ketebalan standar 9mm yang memberikan kekuatan optimal.",
     features: [
-      "Bahan keramik berkualitas premium",
-      "Tahan cuaca dan perubahan suhu",
-      "Berbagai pilihan warna",
-      "Tidak mudah pecah",
-      "Sistem interlock yang kuat",
-      "Maintenance minimal",
+      "Dimensi 1200 X 2400 X 9mm",
+      "Material gypsum berkualitas tinggi",
+      "Permukaan halus siap finishing",
+      "Anti rayap dan jamur",
+      "Ringan dan mudah dipasang",
+      "Standar industri konstruksi",
     ],
-    image: "/images/genteng-keramik.jpg",
+    image: "/images/Detail/Plafon/Gypsum Jayaboard 1200 X 2400 X 9mm.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Plafon.webp",
     whatsapp_text:
-      "Selamat siang, saya ingin menanyakan tentang Genteng Keramik Premium. Bisa tolong kirim katalog warna dan harga?",
+      "Halo, saya tertarik dengan Gypsum Jayaboard 1200 X 2400 X 9mm. Mohon info harga per lembar dan ketersediaan stok.",
   },
   {
     id: 3,
-    name: "Genteng Beton",
+    name: "Plafon GRC",
     description:
-      "Genteng beton dengan kekuatan struktural tinggi dan daya tahan luar biasa. Cocok untuk bangunan dengan beban atap yang berat.",
+      "Plafon GRC (Glass Reinforced Concrete) untuk aplikasi interior dan eksterior. Material inovatif yang menggabungkan kekuatan beton dengan fleksibilitas serat kaca.",
     features: [
-      "Material beton berkualitas tinggi",
-      "Kekuatan struktural maksimal",
-      "Tahan terhadap angin kencang",
-      "Kedap air sempurna",
-      "Harga ekonomis",
-      "Mudah dalam perawatan",
+      "Material GRC berkualitas premium",
+      "Tahan cuaca ekstrem",
+      "Ringan namun sangat kuat",
+      "Design variatif dan modern",
+      "Cocok interior dan eksterior",
+      "Tahan api dan anti rayap",
     ],
-    image: "/images/genteng-beton.jpg",
+    image: "/images/Detail/Plafon/Plafon GRC.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Plafon.webp",
     whatsapp_text:
-      "Halo, saya membutuhkan Genteng Beton untuk proyek rumah. Mohon informasi harga per meter persegi dan cara pemesanan.",
+      "Halo, saya tertarik dengan Plafon GRC. Mohon info harga, ukuran yang tersedia dan spesifikasi lengkap.",
   },
   {
     id: 4,
-    name: "Seng Gelombang",
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 3m",
     description:
-      "Seng gelombang berkualitas dengan profil yang kuat dan tahan lama. Solusi ekonomis untuk atap gudang, workshop, dan bangunan komersial.",
+      "Shunda Plafon PVC Ceiling ukuran 8mm X 30cm X 3m untuk plafon modern. Material PVC berkualitas tinggi yang tahan air dan mudah perawatan.",
     features: [
-      "Galvanis berkualitas tinggi",
-      "Profil gelombang yang kuat",
-      "Tahan karat dan korosi",
-      "Pemasangan cepat dan mudah",
-      "Harga sangat ekonomis",
-      "Tersedia berbagai ukuran",
+      "Dimensi 8mm X 30cm X 3m",
+      "Material PVC berkualitas tinggi",
+      "100% anti air dan kelembaban",
+      "Mudah dibersihkan",
+      "Instalasi cepat dan praktis",
+      "Tersedia berbagai motif",
     ],
-    image: "/images/seng-gelombang.jpg",
+    image:
+      "/images/Detail/Plafon/Shunda Plafon PVC Ceiling 8mm X 30cm X 3m.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Plafon.webp",
     whatsapp_text:
-      "Selamat pagi, saya mencari Seng Gelombang untuk atap gudang. Bisa minta info harga dan ukuran yang tersedia?",
+      "Halo, saya tertarik dengan Shunda Plafon PVC Ceiling 8mm X 30cm X 3m. Mohon info harga per batang dan motif yang tersedia.",
+  },
+  {
+    id: 5,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 4m",
+    description:
+      "Shunda Plafon PVC Ceiling ukuran 8mm X 30cm X 4m untuk plafon modern dengan panjang standar. Mengurangi sambungan untuk hasil yang lebih rapi dan professional.",
+    features: [
+      "Dimensi 8mm X 30cm X 4m",
+      "Material PVC premium quality",
+      "Anti air dan anti jamur",
+      "Sambungan lebih sedikit",
+      "Pemasangan lebih efisien",
+      "Finishing yang rapi",
+    ],
+    image:
+      "/images/Detail/Plafon/Shunda Plafon PVC Ceiling 8mm X 30cm X 4m.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Plafon.webp",
+    whatsapp_text:
+      "Halo, saya tertarik dengan Shunda Plafon PVC Ceiling 8mm X 30cm X 4m. Mohon info harga dan ketersediaan stok.",
+  },
+  {
+    id: 6,
+    name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 5m",
+    description:
+      "Shunda Plafon PVC Ceiling ukuran 8mm X 30cm X 5m untuk plafon modern dengan panjang maksimal. Ideal untuk ruangan besar dengan sambungan minimal.",
+    features: [
+      "Dimensi 8mm X 30cm X 5m",
+      "Material PVC tahan lama",
+      "Panjang maksimal 5 meter",
+      "Sambungan minimal",
+      "Cocok untuk ruangan besar",
+      "Hasil finishing sempurna",
+    ],
+    image:
+      "/images/Detail/Plafon/Shunda Plafon PVC Ceiling 8mm X 30cm X 5m.webp",
+    thumbnail: "/images/Thumbnail/Thumbnail-Kategori-Plafon.webp",
+    whatsapp_text:
+      "Halo, saya tertarik dengan Shunda Plafon PVC Ceiling 8mm X 30cm X 5m. Mohon info harga per batang dan minimum order.",
   },
 ];
 
-export default function AtapPage() {
+export default function PlafonPage() {
   return (
     <CategoryPage
-      categoryName="Atap"
-      categoryIcon="🏠"
-      categoryDescription="Berbagai jenis material atap berkualitas untuk melindungi bangunan Anda. Dari genteng metal, keramik, hingga sistem atap modern dengan daya tahan maksimal."
-      products={atapProducts}
+      categoryName="Plafon"
+      categoryIcon="📋"
+      categoryDescription="Koleksi lengkap material plafon berkualitas tinggi untuk berbagai kebutuhan interior. Dari gypsum premium, PVC anti air, hingga GRC dengan berbagai ukuran dan finishing modern."
+      products={plafonProducts}
     />
   );
 }
-
-export const metadata = {
-  title: "Atap - Bahan Bangunan Store",
-  description:
-    "Jual berbagai jenis atap berkualitas: genteng metal, keramik, asbes gelombang, spandek dengan harga terbaik. Tahan cuaca dan anti bocor.",
-  keywords:
-    "genteng metal, genteng keramik, asbes gelombang, spandek, atap galvalum, atap bitumen, material atap",
-};
-

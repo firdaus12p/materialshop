@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import CategoriesSection from "@/components/CategoriesSection";
-import FeaturedProducts from "@/components/FeaturedProducts";
+import FeaturedProducts from "@/components/FeaturedProducts_new";
 import {
   generateOrganizationSchema,
   generateWebsiteSchema,
@@ -12,12 +12,12 @@ import {
 export const metadata: Metadata = {
   title: "Beranda - Bahan Bangunan Store | Material Konstruksi Terlengkap",
   description:
-    "Jual bahan material bangunan terlengkap dengan harga terbaik. Papan kayu, plafon gypsum, baja ringan, genteng, pipa PVC, paku baut, dan sanitary. Melayani seluruh Indonesia.",
+    "Jual bahan material bangunan terlengkap dengan harga terbaik. Atap spandek, plafon gypsum, baja ringan, genteng, pipa PVC, paku baut, dan sanitary. Melayani seluruh Indonesia.",
   keywords: [
     "toko bahan bangunan online",
     "jual material konstruksi",
     "supplier bahan bangunan",
-    "papan kayu berkualitas",
+    "atap spandek berkualitas",
     "baja ringan murah",
     "genteng metal terbaik",
     "pipa PVC SNI",

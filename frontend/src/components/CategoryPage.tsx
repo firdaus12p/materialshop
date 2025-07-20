@@ -11,6 +11,7 @@ interface Product {
   description: string;
   features: string[];
   image: string;
+  thumbnail?: string; // Optional thumbnail untuk grid view
   whatsapp_text: string;
 }
 
@@ -113,8 +114,35 @@ export function CategoryPage({
                   className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col justify-between"
                 >
                   <div>
-                    <div className="h-32 flex items-center justify-center bg-gray-100 border-b">
-                      <span className="text-4xl">{categoryIcon}</span>
+                    <div className="h-32 flex items-center justify-center bg-gray-100 border-b relative overflow-hidden">
+                      {product.thumbnail ? (
+                        <img
+                          src={product.thumbnail}
+                          alt={product.name}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            // Fallback ke icon jika gambar tidak ada
+                            const imgElement = e.target as HTMLImageElement;
+                            const parentElement = imgElement.parentElement;
+                            imgElement.style.display = "none";
+                            if (parentElement) {
+                              const fallbackDiv = parentElement.querySelector(
+                                ".fallback-icon"
+                              ) as HTMLElement;
+                              if (fallbackDiv) {
+                                fallbackDiv.style.display = "flex";
+                              }
+                            }
+                          }}
+                        />
+                      ) : null}
+                      <div
+                        className={`fallback-icon absolute inset-0 flex items-center justify-center ${
+                          product.thumbnail ? "hidden" : "flex"
+                        }`}
+                      >
+                        <span className="text-4xl">{categoryIcon}</span>
+                      </div>
                     </div>
                     <div className="p-4 pb-2">
                       <div className="text-blue-600 text-xs font-semibold mb-1">
@@ -185,11 +213,35 @@ export function CategoryPage({
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-screen overflow-y-auto">
             <div className="relative">
-              <img
-                src={selectedProduct.image}
-                alt={selectedProduct.name}
-                className="w-full h-64 object-cover rounded-t-lg"
-              />
+              <div className="w-full h-64 bg-gray-100 rounded-t-lg relative overflow-hidden">
+                {selectedProduct.image ? (
+                  <img
+                    src={selectedProduct.image}
+                    alt={selectedProduct.name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const imgElement = e.target as HTMLImageElement;
+                      const parentElement = imgElement.parentElement;
+                      imgElement.style.display = "none";
+                      if (parentElement) {
+                        const fallbackDiv = parentElement.querySelector(
+                          ".fallback-icon"
+                        ) as HTMLElement;
+                        if (fallbackDiv) {
+                          fallbackDiv.style.display = "flex";
+                        }
+                      }
+                    }}
+                  />
+                ) : null}
+                <div
+                  className={`fallback-icon absolute inset-0 flex items-center justify-center ${
+                    selectedProduct.image ? "hidden" : "flex"
+                  }`}
+                >
+                  <span className="text-8xl">{categoryIcon}</span>
+                </div>
+              </div>
               <button
                 onClick={closeModal}
                 className="absolute top-4 right-4 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 transition-all"

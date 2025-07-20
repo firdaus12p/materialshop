@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingConsultation from "@/components/FloatingConsultation";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bahanbangunanstore.com"),
   title:
     "Bahan Bangunan Store - Jual Material Bangunan Terlengkap & Terpercaya",
   description:
-    "Toko bahan bangunan online terpercaya melayani seluruh Indonesia. Jual papan kayu, baja ringan, genteng, pipa PVC, plafon gypsum, paku baut dengan harga terbaik. Order via WhatsApp!",
+    "Toko bahan bangunan online terpercaya melayani seluruh Indonesia. Jual atap spandek, baja ringan, genteng, pipa PVC, plafon gypsum, paku baut dengan harga terbaik. Order via WhatsApp!",
   keywords: [
     "bahan bangunan store",
     "jual bahan bangunan",
     "material bangunan",
     "toko bahan bangunan online",
-    "papan kayu",
+    "atap spandek berkualitas",
     "baja ringan",
     "genteng metal",
     "pipa PVC",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     title:
       "Bahan Bangunan Store - Jual Material Bangunan Terlengkap & Terpercaya",
     description:
-      "Toko bahan bangunan online terpercaya melayani seluruh Indonesia. Jual papan kayu, baja ringan, genteng, pipa PVC, plafon gypsum dengan harga terbaik.",
+      "Toko bahan bangunan online terpercaya melayani seluruh Indonesia. Jual atap spandek, baja ringan, genteng, pipa PVC, plafon gypsum dengan harga terbaik.",
     url: "https://bahanbangunanstore.com",
     siteName: "Bahan Bangunan Store",
     type: "website",
@@ -109,6 +110,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-gray-50 font-sans antialiased">
         {children}
+        <FloatingConsultation />
       </body>
     </html>
   );

@@ -51,13 +51,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Category pages
   const categories = [
-    "papan",
+    "atap",
     "plafon",
     "paku-dan-baut",
     "baja-ringan",
-    "atap",
     "pipa",
     "sanitary",
+    "tangki-air",
+    "tangki-ipal",
     "lainnya",
   ];
 
@@ -70,7 +71,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Article pages
   const articles = [
-    "papan-kayu",
     "baja-ringan-vs-kayu",
     "instalasi-pipa-pvc",
     "jenis-genteng",
