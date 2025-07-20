@@ -211,8 +211,8 @@ export default function FeaturedProducts() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {featuredProducts.map((product) => {
-            // Produk terjual random di bawah 200
-            const sold = Math.floor(Math.random() * 200);
+            // Produk terjual di atas 1000
+            const sold = Math.floor(Math.random() * 2000) + 1000;
             return (
               <div
                 key={product.id}
@@ -246,29 +246,12 @@ export default function FeaturedProducts() {
                     {product.description}
                   </p>
 
-                  {/* Features */}
-                  <div className="mb-4">
-                    <div className="text-xs text-gray-500 mb-2">
-                      Fitur Utama:
-                    </div>
-                    <div className="flex flex-wrap gap-1">
-                      {product.features.slice(0, 3).map((feature, index) => (
-                        <span
-                          key={index}
-                          className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
-                        >
-                          {feature}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
                   {/* Stats */}
                   <div className="flex items-center justify-between mb-4 text-xs text-gray-500">
                     <span>Terjual {sold}+</span>
                     <span className="flex items-center">
                       <span className="text-yellow-400 mr-1">⭐</span>
-                      4.{Math.floor(Math.random() * 4) + 5}/5
+                      5.0/5
                     </span>
                   </div>
 

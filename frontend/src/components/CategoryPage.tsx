@@ -106,8 +106,8 @@ export function CategoryPage({
           {products
             .filter((product) => product && product.id && product.name)
             .map((product) => {
-              // Produk terjual random di bawah 200
-              const sold = Math.floor(Math.random() * 200);
+              // Produk terjual di atas 1000
+              const sold = Math.floor(Math.random() * 2000) + 1000;
               return (
                 <div
                   key={product.id}

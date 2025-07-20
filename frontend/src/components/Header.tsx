@@ -675,10 +675,19 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <h1 className="text-xl sm:text-2xl font-bold text-gradient">
-              <span className="hidden sm:inline">Bahan Bangunan Store</span>
-              <span className="sm:hidden">BB Store</span>
-            </h1>
+            <img 
+              src="/images/Logo/Logo BBStore.png" 
+              alt="Bahan Bangunan Store" 
+              className="h-8 sm:h-10 w-auto"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                const fallback = document.createElement('h1');
+                fallback.className = 'text-xl sm:text-2xl font-bold text-gradient';
+                fallback.innerHTML = '<span class="hidden sm:inline">Bahan Bangunan Store</span><span class="sm:hidden">BB Store</span>';
+                target.parentNode?.appendChild(fallback);
+              }}
+            />
           </Link>
 
           {/* Search Bar - Desktop/Tablet */}
