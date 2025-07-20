@@ -280,7 +280,7 @@ export default function FeaturedProducts() {
       {/* Product Modal */}
       {selectedProduct && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
             <div className="relative">
               {/* Close Button */}
               <button
@@ -303,7 +303,7 @@ export default function FeaturedProducts() {
               </button>
 
               {/* Product Image */}
-              <div className="h-64 bg-gray-100">
+              <div className="h-48 bg-gray-100">
                 <img
                   src={selectedProduct.image}
                   alt={selectedProduct.name}

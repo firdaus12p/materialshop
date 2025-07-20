@@ -149,65 +149,91 @@ const searchableProducts: Product[] = [
   { id: 19, name: "Spandek", category: "Atap", href: "/kategori/atap" },
 
   // Pipa
-  { id: 20, name: "Pipa PVC", category: "Pipa", href: "/kategori/pipa" },
-  { id: 21, name: "Pipa Galvanis", category: "Pipa", href: "/kategori/pipa" },
-  { id: 22, name: "Pipa PPR", category: "Pipa", href: "/kategori/pipa" },
-  { id: 23, name: "Pipa Air Limbah", category: "Pipa", href: "/kategori/pipa" },
+  {
+    id: 20,
+    name: "Pipa HDPE Rajalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 21,
+    name: "Pipa PVC Indalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 22,
+    name: "Pipa PVC Rajalon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 23,
+    name: "Pipa PVC Ratulon",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
+  {
+    id: 24,
+    name: "Pipa PVC Two Horse",
+    category: "Pipa",
+    href: "/kategori/pipa",
+  },
 
   // Sanitary
   {
-    id: 24,
+    id: 25,
     name: "Closet Duduk",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 25,
+    id: 26,
     name: "Wastafel",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 26,
+    id: 27,
     name: "Keran Air",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
-  { id: 27, name: "Shower", category: "Sanitary", href: "/kategori/sanitary" },
+  { id: 28, name: "Shower", category: "Sanitary", href: "/kategori/sanitary" },
 
   // Plafon
   {
-    id: 28,
+    id: 29,
     name: "Cornice Gipsum A Plus",
     category: "Plafon",
     href: "/kategori/plafon",
   },
   {
-    id: 29,
+    id: 30,
     name: "Gypsum Jayaboard 1200 X 2400 X 9mm",
     category: "Plafon",
     href: "/kategori/plafon",
   },
   {
-    id: 30,
+    id: 31,
     name: "Plafon GRC",
     category: "Plafon",
     href: "/kategori/plafon",
   },
   {
-    id: 31,
+    id: 32,
     name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 3m",
     category: "Plafon",
     href: "/kategori/plafon",
   },
   {
-    id: 32,
+    id: 33,
     name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 4m",
     category: "Plafon",
     href: "/kategori/plafon",
   },
   {
-    id: 33,
+    id: 34,
     name: "Shunda Plafon PVC Ceiling 8mm X 30cm X 5m",
     category: "Plafon",
     href: "/kategori/plafon",
@@ -215,319 +241,289 @@ const searchableProducts: Product[] = [
 
   // Paku dan Baut
   {
-    id: 34,
+    id: 35,
     name: "Dynabolt 10mm X 4.8cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 35,
+    id: 36,
     name: "Dynabolt 10mm X 6.0cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 36,
+    id: 37,
     name: "Dynabolt 10mm X 8.0cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 37,
+    id: 38,
     name: "Paku Besi 4cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 38,
+    id: 39,
     name: "Paku Besi 5cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 39,
+    id: 40,
     name: "Paku Besi 7cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 40,
+    id: 41,
     name: "Paku Besi 10cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 41,
+    id: 42,
     name: "Paku Besi 12cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 42,
+    id: 43,
     name: "Paku Beton 4cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 43,
+    id: 44,
     name: "Paku Beton 5cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 44,
+    id: 45,
     name: "Paku Beton 7cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 45,
+    id: 46,
     name: "Paku Beton 10cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 46,
+    id: 47,
     name: "Ruping Atap Spandek 2cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 47,
+    id: 48,
     name: "Ruping Atap Spandek 4.5cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 48,
+    id: 49,
     name: "Ruping Atap Spandek 6cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 49,
+    id: 50,
     name: "Ruping Atap Spandek 7cm",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 50,
+    id: 51,
     name: "Screw Calciboard 6 X 1 14 (3cm)",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 51,
+    id: 52,
     name: "Screw Calciboard 6 X 34 (2cm)",
     category: "Paku dan Baut",
     href: "/kategori/paku-dan-baut",
   },
   {
-    id: 52,
-    name: "Tangki Air Fiberglass 250L",
-    category: "Tangki Air",
-    href: "/kategori/tangki-air",
-  },
-  {
     id: 53,
-    name: "Tangki Air Fiberglass 500L",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 250 Liter",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 54,
-    name: "Tangki Air Fiberglass 600L",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 500 Liter",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 55,
-    name: "Tangki Air Fiberglass 800L",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 600 Liter",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 56,
-    name: "Tangki Air Fiberglass 1M3 (1000L)",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 800 Liter",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 57,
-    name: "Tangki Air Fiberglass 1.2M3 (1200L)",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 1 M3",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 58,
-    name: "Tangki Air Fiberglass 2M3 (2000L)",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 1,2 M3",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 59,
-    name: "Tangki Air Fiberglass 3M3 (3000L)",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 2 M3",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 60,
-    name: "Tangki Air Fiberglass 3M3 Kapsul",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 3 M3",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 61,
-    name: "Tangki Air Fiberglass 4M3 (4000L)",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 3 M3 Model Kapsul",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 62,
-    name: "Tangki Air Fiberglass 5M3 (5000L)",
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 4 M3",
     category: "Tangki Air",
     href: "/kategori/tangki-air",
   },
   {
     id: 63,
+    name: "Tangki Air Tandon Bak Air Fiberglass Kap 5 M3",
+    category: "Tangki Air",
+    href: "/kategori/tangki-air",
+  },
+  {
+    id: 64,
     name: "Tangki Biofilter Anaerob Aerob FRP KAP 5 M3",
     category: "Tangki IPAL",
     href: "/kategori/tangki-ipal",
   },
   {
-    id: 64,
+    id: 65,
     name: "Tangki Ipal 600 Liter",
     category: "Tangki IPAL",
     href: "/kategori/tangki-ipal",
   },
   {
-    id: 65,
+    id: 66,
     name: "Tangki Ipal 800 Liter",
     category: "Tangki IPAL",
     href: "/kategori/tangki-ipal",
   },
   {
-    id: 66,
+    id: 67,
     name: "Tangki Ipal Komunal UK 3 M3",
     category: "Tangki IPAL",
     href: "/kategori/tangki-ipal",
   },
   {
-    id: 67,
+    id: 68,
     name: "Tangki Ipal Komunal UK 5 M3",
     category: "Tangki IPAL",
     href: "/kategori/tangki-ipal",
   },
   {
-    id: 68,
+    id: 69,
     name: "Baja Ringan Reng CBM (K-STEEL) 0.40mm Besar (Standar)",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 69,
+    id: 70,
     name: "Canal C 75x 0.65X6 MTR Antik Truss (ECO)",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 70,
+    id: 71,
     name: "Canal C Cnp 123 Black Steel Purlin",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 71,
+    id: 72,
     name: "CNP 100 Black Steel",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 72,
+    id: 73,
     name: "Hollow",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 73,
+    id: 74,
     name: "Kanal C-Canal 75 X 0.65 X 6 MTR Antik Truss (Super)",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 74,
+    id: 75,
     name: "Kanal C-Canal 75x0.75x6 MTR Antik Truss (ECO)",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 75,
+    id: 76,
     name: "Wall Angle",
     category: "Baja Ringan",
     href: "/kategori/baja-ringan",
   },
   {
-    id: 76,
-    name: "Pipa HDPE Rajalon",
-    category: "Pipa",
-    href: "/kategori/pipa",
-  },
-  {
     id: 77,
-    name: "Pipa PVC Indalon",
-    category: "Pipa",
-    href: "/kategori/pipa",
-  },
-  {
-    id: 78,
-    name: "Pipa PVC Rajalon",
-    category: "Pipa",
-    href: "/kategori/pipa",
-  },
-  {
-    id: 79,
-    name: "Pipa PVC Ratulon",
-    category: "Pipa",
-    href: "/kategori/pipa",
-  },
-  {
-    id: 80,
-    name: "Pipa PVC Two Horse",
-    category: "Pipa",
-    href: "/kategori/pipa",
-  },
-  {
-    id: 81,
     name: "Toilet Portable FRP Model Standar",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 82,
+    id: 78,
     name: "Bak Mandi Celup 45 x 45 x 60 Biru",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 83,
+    id: 79,
     name: "Bak Mandi Oval Biru",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 84,
+    id: 80,
     name: "Bak Mandi Oval Pink Tempat Sabun",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 85,
+    id: 81,
     name: "Bak Mandi Oval Pink",
     category: "Sanitary",
     href: "/kategori/sanitary",
   },
   {
-    id: 86,
+    id: 82,
     name: "Bak Mandi Oval Putih",
     category: "Sanitary",
     href: "/kategori/sanitary",
@@ -575,9 +571,20 @@ export default function Header() {
       }
     }
 
-    // Also close on scroll for mobile
-    function handleScroll() {
-      setShowResults(false);
+    // Close on scroll but only if scroll is outside the dropdown area
+    function handleScroll(event: Event) {
+      const target = event.target as Node;
+      // Only close if scroll is not happening within the search container
+      if (searchRef.current && !searchRef.current.contains(target)) {
+        // Additional check: only close on significant scroll (like page scroll)
+        if (
+          target === document ||
+          target === document.documentElement ||
+          target === document.body
+        ) {
+          setShowResults(false);
+        }
+      }
     }
 
     document.addEventListener("mousedown", handleClickOutside);
@@ -675,16 +682,18 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img 
-              src="/images/Logo/Logo BBStore.png" 
-              alt="Bahan Bangunan Store" 
+            <img
+              src="/images/Logo/Logo BBStore.png"
+              alt="Bahan Bangunan Store"
               className="h-8 sm:h-10 w-auto"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                const fallback = document.createElement('h1');
-                fallback.className = 'text-xl sm:text-2xl font-bold text-gradient';
-                fallback.innerHTML = '<span class="hidden sm:inline">Bahan Bangunan Store</span><span class="sm:hidden">BB Store</span>';
+                target.style.display = "none";
+                const fallback = document.createElement("h1");
+                fallback.className =
+                  "text-xl sm:text-2xl font-bold text-gradient";
+                fallback.innerHTML =
+                  '<span class="hidden sm:inline">Bahan Bangunan Store</span><span class="sm:hidden">BB Store</span>';
                 target.parentNode?.appendChild(fallback);
               }}
             />
